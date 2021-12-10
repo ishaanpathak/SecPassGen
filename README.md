@@ -3,7 +3,7 @@ A simple python tool to generate pretty secure passphrase
 
 # How does it work
 
-The script generates words using the [Diceware method](#Diceware Method), for which it requires random numbers. The script primarily uses random numbers from [random.org/integer](https://random.org/integer) but an argument is provided to run it offline as well. The only reason random.org has been used is because the service provides actual random numbers as compared to pseudo random numbers that the random library provides.
+The script generates words using the [Diceware method](#diceware-method), for which it requires random numbers. The script primarily uses random numbers from [random.org/integer](https://random.org/integer) but an argument is provided to run it offline as well. The only reason random.org has been used is because the service provides actual random numbers as compared to pseudo random numbers that the random library provides.
 
 Once the script has the words it needs, it generates the passwords based on the rules provided. The default rule is to capitalize each word's first letter and add a random number anywhere in the passphrase. The rules can be changed using the arguments but the default rules provide best security as compared to other configuration(s).
 
