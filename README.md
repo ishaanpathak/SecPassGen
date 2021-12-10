@@ -32,16 +32,16 @@ python ./SecPassGen.py --help
 
 All of these Arguments are Optional
 
-| Flag    | Flag (Long)         | Function                         |
-| ------- | ------------------- | -------------------------------- |
-| -h,     | --help	            | show this help message and exit  |
-| -nc,    | --no-cap	          | Exclude Capital Letters          |
-| -nn,    | --no-num	          | Exclude Numbers                  |
-| -jp,    | --japanese	        | Use Japanese Wordlist            |
-| -w W,   | --words W	          | Number of words to use           |
-| -s S,   | --separator S	      | Separator symbol to use          |
-| -o,     | --offline       | Use Python's Random Number Generator |
-| -pc PC, | --password-count PC |	Number of Passwords to Generate  |
+| Flag    | Flag (Long)         | Function                             |
+| ------- | ------------------- | ------------------------------------ |
+| -h      | --help	            | show this help message and exit      |
+| -nc     | --no-cap	          | Exclude Capital Letters              |
+| -nn     | --no-num	          | Exclude Numbers                      |
+| -jp     | --japanese	        | Use Japanese Wordlist                |
+| -w W    | --words W	          | Number of words to use               |
+| -s S    | --separator S	      | Separator symbol to use              |
+| -o      | --offline           | Use Python's Random Number Generator |
+| -pc PC  | --password-count PC |	Number of Passwords to Generate      |
 
 # Diceware Method
 
