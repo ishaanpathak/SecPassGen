@@ -1,0 +1,9 @@
+[project]
+name = "secpassgen"
+version = "0.1.0"
+description = "Generates customizable secure passphrases"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.3",
+]

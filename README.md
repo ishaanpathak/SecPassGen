@@ -1,5 +1,6 @@
 # SecPassGen
-A simple python tool to generate pretty secure passphrase
+
+A simple python tool to generate pretty secure passphrases
 
 # How does it work
 
@@ -13,35 +14,52 @@ You must first clone the repository anywhere you want and then navigate to the f
 
 ```bash
 git clone https://github.com/ishaanpathak/SecPassGen.git
+cd SecPassGen
 ```
 
-Once you have the repository cloned, the Usage is really easy since everything is based on arguments provided. All you need to do is to open a terminal wherever the `SecPassGen.py` file is present. And then run the following command.
+# Running with [uv](https://docs.astral.sh/uv/)
+
+If you are using or want to use [uv](https://docs.astral.sh/uv/), make sure it is installed and is added to path. And then run the following command below.
 
 ```bash
-python ./SecPassGen.py [arguments]
+uv run ./main.py [arguments]
 ```
 
-where arguments are completely **optional** but in case you want to modify how the passwords are generated or want to generate more than one password, you can use either of the following commands to get help
+# Running normally
+
+First, install the requirements using the command below.
 
 ```bash
-python ./SecPassGen.py -h
-python ./SecPassGen.py --help
+pip install -r requirements.txt
+```
+
+Then, use the program using the following command:
+
+```bash
+python ./main.py [arguments]
+```
+
+The arguments are completely **optional** but in case you want to modify how the passwords are generated or want to generate more than one password, you can use either of the following commands to get help
+
+```bash
+python ./main.py -h
+python ./main.py --help
 ```
 
 # Arguments / Flags
 
-All of these Arguments are Optional
+All arguments are entirely **optional**. However, if you'd like to customize the password generation process or generate multiple passwords, you can use these arguments.
 
-| Flag    | Flag (Long)         | Function                             |
-| ------- | ------------------- | ------------------------------------ |
-| -h      | --help	            | show this help message and exit      |
-| -nc     | --no-cap	          | Exclude Capital Letters              |
-| -nn     | --no-num	          | Exclude Numbers                      |
-| -jp     | --japanese	        | Use Japanese Wordlist                |
-| -w W    | --words W	          | Number of words to use               |
-| -s S    | --separator S	      | Separator symbol to use              |
-| -o      | --offline           | Use Python's Random Number Generator |
-| -pc PC  | --password-count PC |	Number of Passwords to Generate      |
+| Flag   | Flag (Long)         | Function                             |
+| ------ | ------------------- | ------------------------------------ |
+| -h     | --help              | show this help message and exit      |
+| -nc    | --no-cap            | Exclude Capital Letters              |
+| -nn    | --no-num            | Exclude Numbers                      |
+| -jp    | --japanese          | Use Japanese Wordlist                |
+| -w W   | --words W           | Number of words to use               |
+| -s S   | --separator S       | Separator symbol to use              |
+| -o     | --offline           | Use Python's Random Number Generator |
+| -pc PC | --password-count PC | Number of Passwords to Generate      |
 
 # Diceware Method
 
